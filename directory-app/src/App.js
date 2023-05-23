@@ -3,7 +3,7 @@ import Welcome from "./components/welcome";
 import Login from "./components/login";
 import Register from "./components/register";
 import Directory from "./components/directory"
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return( <div> 

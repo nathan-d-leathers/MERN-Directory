@@ -1,18 +1,18 @@
 import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+// import { redirect } from 'react-router-dom';
 
 function Welcome() {
 
+    const navigate = useNavigate();
 
     return (
-        <div>
-            <h1>Welcome to the Travelers Employee Directory</h1>
-            <br/>
-            {/* <button type="button">Login</button>
-            <button type="button">Create Account</button> */}
-            {/* <input type="button" value="Login" onClick={useNavigate("http://localhost:3000/login")}/> */}
+        <div className='welcome-body'>
+            <h1>This is the Welcome Page</h1>
+            <button onClick={() => navigate('/login')}>Login</button>
         </div>
     )
-}
+};
 
 export default Welcome
