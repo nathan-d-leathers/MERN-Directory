@@ -1,0 +1,44 @@
+{
+   "workers": [
+        { 
+        "id": "1",
+        "name": "John Smith",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "123-456-7898",
+        "salary": "$100,000",
+        "permisions": false,
+        "employees": false
+        },
+        { 
+        "id": "2",
+        "name": "Jane Doe",
+        "role": "employee",
+        "location": "St Paul",
+        "contact": "867-5309",
+        "salary": "$100,000",
+        "permisions": false,
+        "employees": false
+        },
+        { 
+        "id": "3",
+        "name": "Nathan Leathers",
+        "role": "HR",
+        "location": "Hartford",
+        "salary": "Tips",
+        "contact": "555-555-5555",
+        "permisions": true,
+        "employees": false
+        },
+        {
+        "id": "4",
+        "name": "Alex Goncalves",
+        "role": "Manager",
+        "location": "Hartford",
+        "contact": "555-2368",
+        "salary": "100 Billion Dollars",
+        "permisions": false,
+        "employees": ["Jane Doe", "John Smith"]
+        }
+    ]
+}
