@@ -5,26 +5,33 @@ function Coworker() {
 
     const [coworker, setCoworker] = useState([]);
     const params = useParams();
-    let base_url = "http://localhost:3000/api/";
-    
-    async function getCoworker() {
-        let fetchedCoworker = await fetchCoworker(params.id);
-        setCoworker(fetchedCoworker);
-      }
-    
-    async function fetchCoworker() {
-        let result = await fetch(`${base_url}/workers/${params.id}`);
-        return result.json();
-      }
+    let base_url = "http://localhost:7500/api/workers";
 
-    useEffect(getCoworker(), []);
+    useEffect(()=>{
+        fetch(`${base_url}/${params.id}`)
+        .then((fetchedCoworker)=>fetchedCoworker.json())
+        .then((resultJson) => setCoworker(resultJson))
+    }, [])
+    
+    // async function getCoworker() {
+    //     let fetchedCoworker = await fetchCoworker(params.id);
+    //     setCoworker(fetchedCoworker);
+    //   }
+    
+    // async function fetchCoworker() {
+    //     let result = await fetch(`${base_url}/workers/${params.id}`);
+    //     return result.json();
+    //   }
 
-    function displaySalaray(){
-        // if (id matches user id, show salary
-        // || if user id is in logged in user's employee list
-        // || if role === hr) show salary
-        // else do not show salary
-    }
+    // useEffect(getCoworker(), []);
+
+    // function displaySalaray(){
+    //     console.log({coworker})
+    //     // if (id matches user id, show salary
+    //     // || if user id is in logged in user's employee list
+    //     // || if role === hr) show salary
+    //     // else do not show salary
+    // }
 
     return (
         <div>

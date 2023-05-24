@@ -5,18 +5,12 @@ function Directory() {
 
     const navigate = useNavigate();
     const [workerData, setWorkerData] = useState([]);
-    // // double check this url
+ 
     let data_url = "http://localhost:7500/api/workers";
-
-
-    // const fetchWorkerData = () => {
-       
-    // };
 
     useEffect(() =>{
         fetch(data_url)
         .then((response)=> response.json())
-        // .then((jsonData) => console.warn({jsonData}))
         .then((jsonData) => setWorkerData(jsonData))
         .catch(error => {
             console.error("Fetch Worker Data Failed: ", error)
