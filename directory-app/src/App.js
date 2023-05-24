@@ -2,7 +2,8 @@
 import Welcome from "./components/Welcome";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Directory from "./components/Directory"
+import Directory from "./components/Directory";
+import Coworker from "./components/Coworker";
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/directory' element={<Directory/>}/>
+        <Route path='/directory/:id' element={<Coworker/>}/>
       </Routes>
     </BrowserRouter>
   </div>)

@@ -22,6 +22,17 @@ app.get("/api/workers", (req,res) => {
     });
 });
 
+app.get("/api/workers/:id", (req,res) => {
+    dao.getCoworker(req.params.id, (error,data) => {
+        if (data) {
+            res.send(data)
+        } else {
+            res.statusCode = 500
+            res.end()
+        }
+    })
+});
+
 app.use(express.static('./public'))
 
 app.listen(port,()=> {

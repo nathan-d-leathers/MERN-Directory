@@ -24,3 +24,15 @@ module.exports.getAllWorkers = function (callback) {
     }
   });
 };
+
+// double check that id number is being passed properly as a number or string
+module.exports.getCoworker = function (id, callback) {
+  let col = dbPool.collection("workerdata");
+  col.find({ id: id }).toArray((error, coworker) => {
+    if (!error) {
+      callback(null, coworker[0]);
+    } else {
+      callback("Could not retrieve coworker", undefined);
+    }
+  });
+};
