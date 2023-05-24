@@ -39,4 +39,4 @@ function Coworker() {
     );
 }
 
-export default Directory
+export default Coworker

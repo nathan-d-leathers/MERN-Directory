@@ -3,10 +3,10 @@ const dotenv = require("dotenv")
 
 dotenv.config()
 
-const uri = process.env.WORKERDATA_DB_URI
+const url = process.env.WORKERDATA_DB_URL
 let dbPool; 
 
-mongodb.MongoClient.connect(uri, function (error, db) {
+mongodb.MongoClient.connect(url, function (error, db) {
   if (!error) {
     dbPool = db.db("directorydb");
   } else {

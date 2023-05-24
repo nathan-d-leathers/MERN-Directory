@@ -1,5 +1,5 @@
-{
-   "workers": [
+
+[
         { 
         "id": "1",
         "name": "John Smith",
@@ -40,5 +40,4 @@
         "permisions": false,
         "employees": ["Jane Doe", "John Smith"]
         }
-    ]
-}
+]

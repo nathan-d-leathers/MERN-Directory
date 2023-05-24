@@ -8,6 +8,9 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return( <div> 
+    <ul className="nav nav-pills">
+        <a className="nav-link" href="/">Profile</a>
+    </ul>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Welcome/>}/>
