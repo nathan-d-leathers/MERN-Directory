@@ -53,7 +53,11 @@ function Register() {
             <button onClick={() => navigate('../directory')}>Go To Directory</button>
             <br/>
             <a onClick={() => navigate('../login')}>Go to Login</a>
+            <br/>
+            <button type="submit">Register</button>
+            <form/>
         </div>
+        
     )
 }
 
