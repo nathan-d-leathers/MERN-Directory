@@ -1,7 +1,7 @@
-const express = require("express")
+// const express = require("express")
 
-const router = express.Router
+// const router = express.Router
 
-router.route("/api/workers").get((req,res) => res.send("hello from the backend workers route"))
+// router.route("/api/workers").get((req,res) => res.send("hello from the backend workers route"))
 
-// export default router
+// // export default router
