@@ -39,50 +39,11 @@ app.get("/api/workers/:id", (req,res) => {
 
 
 app.use(express.static('./public'))
-app.post('/register', (req,res) => {
-    const userData = req.body;
-
-    const db = client.db(directorydb);
-    const collection = db.collection(users);
-    collection.insertOne(userData, (err) => {
-        if (err) {
-            console.error('Failed to insert data to database:', err);
-            res.status(500).send('Registration unsuccessful');
-            return;
-        }
-        
-        res.status(200).send('Registration successful');
-    });
-});
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({
-//     extended: true
-// }))
-
-// app.post(/user/register), function(req,res){
-//     var name = req.body.name;
-//     var contact = req.body.contact;
-//     var role = req.body.role;
-//     var location = req.body.location;
-//     var salary = req.body.salary;
-//     var username = req.body.username;
-//     var password = req.body.password;
-
-//     var data = {
-//         "name": name,
-//         "contact": contact,
-//         "role": role,
-//         "location": location,
-//         "salary": salary,
-//         "username": username,
-//         "password": password
-//     }
-// Db.collection('newUsers').insertOne(data,function(err, collection){
-//     if (err) throw err;
-//     console.log("Record inserted succesfully")
-// });
-
-// }
+// app.post("/api/register", async (req,res) => {
+//     console.log(req.body)
+//     res.json({status: 'ok'})
+// })
+    
 
 
 app.listen(port,()=> {

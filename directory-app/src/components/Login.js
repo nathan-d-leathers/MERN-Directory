@@ -18,10 +18,6 @@ function Login({user, setUser}) {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(user)
-        // setUser({
-        //     'username': '',
-        //     'password': ''
-        // });
         navigate("../directory")
     };
 

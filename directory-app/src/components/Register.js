@@ -1,64 +1,110 @@
-import {React} from 'react';
+import {React, useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import umbrella from "../assets/umbrella.jpeg"
+import umbrella from "../assets/umbrella.jpeg";
+
     
-function Register() {
+function Register({newUser, setNewUser}) {
 
     const navigate = useNavigate();
 
+    const handleInputChange = (event) => {
+        const {name, value } = event.target;
+        setNewUser((prevUser) => ({
+            ...prevUser,
+            [name] : value,
+        }))
+    };
+
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(newUser)
+        navigate("../directory")
+    };
+
+
     return (
-        <body>
+            <div>
             <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Register Account Page</h1>
             <br/>
-            <form action="/user/register" method='POST'/>
-                <label>
+            <form  onSubmit={handleSubmit}/>
+            <label>
                     Name:
-                    <input type="text" name="name" required/>
+                    <input 
+                    type="text" 
+                    name="name"
+                    value={newUser.name} 
+                    onChange={handleInputChange} 
+                    required/>
                 </label>
             <br/>
-                <label>
+            <label>
                     Phone Number:
-                    <input type="number" name="contact" required/>
+                    <input 
+                    type="text" 
+                    name="contact"
+                    value={newUser.contact} 
+                    onChange={handleInputChange} 
+                    required/>
                 </label>
             <br/>
                 <label>
                     Job Role:
-                    <input type="radio" id='employee' name="role" value="Employee"/>
+                    <input type="radio" id='employee' onChange={handleInputChange} name="role" value="Employee"/>
                     <label for="employee">Employee</label><br/>
-                    <input type="radio" id='humanResources' name="role" value="HumanResources"/>
-                    <label for="humanResources">Human Resources</label><br/>
-                    <input type="radio" id='manager' name="role" value="Manager"/>
+                    <input type="radio" id='hr' onChange={handleInputChange} name="role" value="HumanResources"/>
+                    <label for="hr">Human Resources</label><br/>
+                    <input type="radio" id='manager' onChange={handleInputChange} name="role" value="Manager"/>
                     <label for="manager">Manager</label><br/>
                 </label>
             <br/>
-                <label>
-                    Work Location:
-                    <input type="text" name="location" required/>
+            <label>
+                    Location:
+                    <input 
+                    type="text" 
+                    name="location"
+                    value={newUser.location} 
+                    onChange={handleInputChange} 
+                    required/>
                 </label>
             <br/>
-                <label>
+            <label>
                     Salary:
-                    <input type="number" name="salary" required/>
+                    <input 
+                    type="text" 
+                    name="salary"
+                    value={newUser.salary} 
+                    onChange={handleInputChange} 
+                    required/>
                 </label>
             <br/>
-                <label>
+            <label>
                     Username:
-                    <input type="text" name="userName" required/>
+                    <input 
+                    type="text" 
+                    name="username"
+                    value={newUser.username} 
+                    onChange={handleInputChange} 
+                    required/>
                 </label>
             <br/>
-                <label>
+            <label>
                     Password:
-                    <input type="password" name="password" required/>
+                    <input 
+                    type="text" 
+                    name="password"
+                    value={newUser.password} 
+                    onChange={handleInputChange} 
+                    required/>
                 </label>
             <br/>
-            <button onClick={() => navigate('../directory')}>Go To Directory</button>
+            <form/>
             <br/>
             <a onClick={() => navigate('../login')}>Go to Login</a>
             <br/>
-            <button type="submit">Register</button>
-            <form/>
-        </body>
+            <button onClick={() => navigate('../directory')} type="submit">Register</button>
+            </div>
         
     )
 }

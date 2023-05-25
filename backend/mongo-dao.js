@@ -1,5 +1,6 @@
 const mongodb = require("mongodb"); 
-const dotenv = require("dotenv")
+const dotenv = require("dotenv");
+const { default: mongoose } = require("mongoose");
 
 dotenv.config()
 
@@ -25,6 +26,16 @@ module.exports.getAllWorkers = function (callback) {
   });
 };
 
+// module.exports.createUser = async function (name, contact, role, location, salary, userName, password) {
+//   this.name = name;
+//   this.contact=contact;
+//   this.role=role;
+//   this.location=location;
+//   this.salary=salary;
+//   this.userName=userName;
+//   this.password=password;
+// }
+
 // double check that id number is being passed properly as a number or string
 module.exports.getCoworker = function (id, callback) {
   let col = dbPool.collection("workerdata");
@@ -36,3 +47,22 @@ module.exports.getCoworker = function (id, callback) {
     }
   });
 };
+
+// const mongoose = require('mongoose')
+    
+// const UserSchema = new mongoose.Schema(
+//     {
+//         name: {type: String, required: true},
+//         contact: {type: String, required: true},
+//         role: {type: String, required: true},
+//         location: {type: String, required: true},
+//         salary: {type: String, required: true},
+//         username: {type: String, required: true},
+//         password: {type: String, required: true},
+//     },
+//     {collection: 'users'}
+// )
+
+// const model = mongoose.Model('UserSchema', UserSchema)
+
+// module.exports = model

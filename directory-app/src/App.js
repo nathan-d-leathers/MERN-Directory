@@ -16,14 +16,25 @@ function App() {
     'password': ''
   })
 
+  const [newUser, setNewUser] = useState({
+    'name': '',
+    'contact': '',
+    'role': '',
+    'location': '',
+    'salary': '',
+    'username': '',
+    'password': ''
+  })
+    
+
   return( <div> 
 
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Welcome/>}/>
         <Route path='/login' element={<Login user={user} setUser={setUser}/>}/>
-        <Route path='/register' element={<Register/>}/>
-        <Route path='/directory' element={<Directory user={user}/>}/>
+        <Route path='/register' element={<Register newUser={newUser} setNewUser={setNewUser}/>}/>
+        <Route path='/directory' element={<Directory user={user} newUser={newUser}/>}/>
         <Route path='/directory/:id' element={<Coworker user={user}/>}/>
         <Route path='/account' element={<Account user={user}/>}/>
       </Routes>

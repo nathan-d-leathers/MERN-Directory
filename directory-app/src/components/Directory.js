@@ -2,8 +2,8 @@ import {React, useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
 
-function Directory({user}) {
-    console.log(user.username)
+function Directory({user, newUser}) {
+    console.log({user, newUser})
     const navigate = useNavigate();
     const [workerData, setWorkerData] = useState([]);
  
