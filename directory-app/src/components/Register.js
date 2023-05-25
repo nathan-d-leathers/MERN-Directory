@@ -6,7 +6,7 @@ function Register() {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <body>
             <h1>Welcome to the Register Account Page</h1>
             <br/>
             <form action="/user/register" method='POST'/>
@@ -56,7 +56,7 @@ function Register() {
             <br/>
             <button type="submit">Register</button>
             <form/>
-        </div>
+        </body>
         
     )
 }
