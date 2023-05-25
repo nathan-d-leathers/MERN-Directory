@@ -13,8 +13,8 @@ function App() {
   // let navigate = useNavigate()
 
   return( <div> 
-    <Link to="/">Home</Link>
-    <Link to="/account">Home</Link>
+    {/* <Link to="/">Home</Link>
+    <Link to="/account">Home</Link> */}
     <hr/>
     <img src={umbrella} id="umbrella" />
     <BrowserRouter>
