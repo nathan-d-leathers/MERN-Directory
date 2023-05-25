@@ -16,7 +16,7 @@ mongodb.MongoClient.connect(url, function (error, db) {
 
 module.exports.getAllWorkers = function (callback) {
   let col = dbPool.collection("workerdata");
-  col.find().toArray((error, allWorkers) => {
+  col.find().sort({name: 1}).toArray((error, allWorkers) => {
     if (!error) {
       callback(null,allWorkers);
     } else {

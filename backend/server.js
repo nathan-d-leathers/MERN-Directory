@@ -3,10 +3,10 @@ const cors = require("cors");
 const dao = require("./mongo-dao.js");
 const app = express();
 const dotenv = require("dotenv");
-const { MongoClient, Db } = require("mongodb");
-const { Router } = require("express");
-const { default: Register } = require("../directory-app/src/components/Register.js");
-var bodyParser=require("body-parser")
+// const { MongoClient, Db } = require("mongodb");
+// const { Router } = require("express");
+// const { default: Register } = require("../directory-app/src/components/Register.js");
+// var bodyParser=require("body-parser")
 
 dotenv.config()
 

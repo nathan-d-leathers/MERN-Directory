@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import {React, useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
+import umbrella from "../assets/umbrella.jpeg"
 
 function Directory() {
 
@@ -23,6 +24,14 @@ function Directory() {
 
     return (
         <div>
+            <button onClick={() => navigate('/')}>
+                Home
+            </button>
+            <button onClick={() => navigate('/account')}>
+                Profile
+            </button>
+            <hr/>
+            <img src={umbrella} id="umbrella" />
             <h2>Welcome to the Directory Page</h2>
             <br/>
             <ul> 
