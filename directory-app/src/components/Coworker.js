@@ -3,12 +3,12 @@ import { useParams } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
 
 function Coworker({user}) {
-
+    const navigate= navigate()
     const [coworker, setCoworker] = useState([]);
     const params = useParams();
     let base_url = "http://localhost:7500/api/workers";
 
-    console.log(`Here is the user data from the coworker page: ${user}`)
+    // console.log(`Here is the user data from the coworker page: ${user}`)
 
     // let user = {
     //     "id": "1",
@@ -51,32 +51,32 @@ function Coworker({user}) {
 
     // useEffect(()=> {
     
-    //     if (user.role == "manager" && user.employees.indexOf(coworker.id) > -1) {
+    //     if (user.role == "manager" && coworker.id in user.employees) {
     //         setPermisions(true)
     //     } else {
     //         console.log("You do not manage this employee")
     //     }
     // },[])
 
-    console.log(coworker);
+    // console.log(coworker);
 
     return (
         <div>            
-            <button>
+            <button onClick={() => navigate('/')}>
                 Home
             </button>
-            <button>
+            <button onClick={() => navigate('/account')}>
                 Profile
             </button>
             <hr/>
             <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Travelers Directory Co-Worker Page</h1>
+            <p>you are logged in as {user.username}</p>
             <br/>
             <h2><u>{coworker.name}</u></h2>
             <h3>{coworker.role}</h3>
             <h3>{coworker.location}</h3>
             <h3>{coworker.contact}</h3>
-            <h1>{user.name}</h1>
             {/* <h3>
                 {(coworker.id == user.id || 
                 user.role === "hr" || 

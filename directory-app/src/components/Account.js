@@ -1,7 +1,7 @@
 import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Account({user}) {
 
     const navigate = useNavigate();
 
@@ -10,7 +10,11 @@ function Login() {
             <h2>Welcome to your Acount Page</h2>
             <hr/>
             <ul>
-                <h3>This is where the users data will go</h3>
+            {Object.entries(user).map(([key,value]) => {
+                <li key={key}>
+                    {value}
+                </li>
+            })}
             </ul>
             <hr/>
             <button onClick={() => navigate('../')}>Edit Account</button>
@@ -19,4 +23,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Account

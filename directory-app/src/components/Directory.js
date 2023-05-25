@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
 
 function Directory({user}) {
-
+    console.log(user.username)
     const navigate = useNavigate();
     const [workerData, setWorkerData] = useState([]);
  
@@ -32,7 +32,7 @@ function Directory({user}) {
             </button>
             <hr/>
             <img src={umbrella} id="umbrella" />
-            <h2>Welcome to the Directory Page</h2>
+            <h2>Welcome to the Directory Page</h2> 
             <br/>
             <ul> 
                 {workerData.map((worker) => (
