@@ -1,5 +1,6 @@
 import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
+import umbrella from "../assets/umbrella.jpeg"
 
 function Login() {
 
@@ -7,6 +8,7 @@ function Login() {
 
     return (
         <div>
+            <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Login Page</h1>
             <br/>
             <form action="/user/register" method='POST'/>

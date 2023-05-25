@@ -1,5 +1,6 @@
 import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
+import umbrella from "../assets/umbrella.jpeg"
     
 function Register() {
 
@@ -7,6 +8,7 @@ function Register() {
 
     return (
         <body>
+            <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Register Account Page</h1>
             <br/>
             <form action="/user/register" method='POST'/>

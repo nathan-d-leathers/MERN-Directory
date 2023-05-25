@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import {React, useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
+import umbrella from "../assets/umbrella.jpeg"
 
 function Coworker() {
 
@@ -58,7 +59,15 @@ function Coworker() {
     console.log(coworker);
 
     return (
-        <div>
+        <div>            
+            <button>
+                Home
+            </button>
+            <button>
+                Profile
+            </button>
+            <hr/>
+            <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Travelers Directory Co-Worker Page</h1>
             <br/>
             <h2><u>{coworker.name}</u></h2>

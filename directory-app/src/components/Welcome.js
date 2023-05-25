@@ -2,6 +2,7 @@ import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
 // import { redirect } from 'react-router-dom';
+import umbrella from "../assets/umbrella.jpeg"
 
 function Welcome() {
     
@@ -9,6 +10,7 @@ function Welcome() {
 
     return (
         <div className='welcome-body'>
+            <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Travelers Enterprise Directory</h1>
             <h2>Login or Create Account below to view the employee directroy</h2>
             <button onClick={() => navigate('/login')}>Login</button>
