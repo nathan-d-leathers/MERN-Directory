@@ -2,22 +2,24 @@ import {React, useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
 
-function Coworker() {
+function Coworker({user}) {
 
     const [coworker, setCoworker] = useState([]);
     const params = useParams();
     let base_url = "http://localhost:7500/api/workers";
 
-    let user = {
-        "id": "1",
-        "name": "Mr. Manager",
-        "role": "hr",
-        "location": "Hartford",
-        "contact": "123-456-7898",
-        "salary": "$100,000",
-        "permisions": false,
-        "employees": ["2",4]
-    }
+    console.log(`Here is the user data from the coworker page: ${user}`)
+
+    // let user = {
+    //     "id": "1",
+    //     "name": "Mr. Manager",
+    //     "role": "hr",
+    //     "location": "Hartford",
+    //     "contact": "123-456-7898",
+    //     "salary": "$100,000",
+    //     "permisions": false,
+    //     "employees": ["2",4]
+    // }
     const [permisions, setPermisions] = useState(false)
 
     useEffect(()=>{
@@ -47,14 +49,14 @@ function Coworker() {
     // }
     // const [permisions, setPermisions] = useState(null)
 
-    useEffect(()=> {
+    // useEffect(()=> {
     
-        if (user.role == "manager" && user.employees.indexOf(coworker.id) > -1) {
-            setPermisions(true)
-        } else {
-            console.log("You do not manage this employee")
-        }
-    },[])
+    //     if (user.role == "manager" && user.employees.indexOf(coworker.id) > -1) {
+    //         setPermisions(true)
+    //     } else {
+    //         console.log("You do not manage this employee")
+    //     }
+    // },[])
 
     console.log(coworker);
 
@@ -74,7 +76,8 @@ function Coworker() {
             <h3>{coworker.role}</h3>
             <h3>{coworker.location}</h3>
             <h3>{coworker.contact}</h3>
-            <h3>
+            <h1>{user.name}</h1>
+            {/* <h3>
                 {(coworker.id == user.id || 
                 user.role === "hr" || 
                 (user.role === "manager" && permisions) 
@@ -82,7 +85,7 @@ function Coworker() {
                 <p>{coworker.salary}</p> :
                 <p>You do not have permision to view this co-workers salary</p>
                 )}
-                </h3>
+                </h3> */}
         </div>
     );
 }

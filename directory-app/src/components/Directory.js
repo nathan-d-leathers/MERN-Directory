@@ -2,7 +2,7 @@ import {React, useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
 
-function Directory() {
+function Directory({user}) {
 
     const navigate = useNavigate();
     const [workerData, setWorkerData] = useState([]);
@@ -21,7 +21,7 @@ function Directory() {
     function handleClick(id) {
         navigate(`/directory/${id}`);
     }
-
+    
     return (
         <div>
             <button onClick={() => navigate('/')}>
