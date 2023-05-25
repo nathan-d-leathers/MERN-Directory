@@ -4,13 +4,19 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Directory from "./components/Directory";
 import Coworker from "./components/Coworker";
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import Account from "./components/Account"
+import {BrowserRouter, Routes, Route, useNavigate, Link } from 'react-router-dom';
+import umbrella from "./assets/umbrella2.jpeg"
 
 function App() {
+
+  // let navigate = useNavigate()
+
   return( <div> 
-    <ul className="nav nav-pills">
-        <a className="nav-link" href="/">Profile</a>
-    </ul>
+    <Link to="/">Home</Link>
+    <Link to="/account">Home</Link>
+    <hr/>
+    <img src={umbrella} id="umbrella" />
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Welcome/>}/>
@@ -18,6 +24,7 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/directory' element={<Directory/>}/>
         <Route path='/directory/:id' element={<Coworker/>}/>
+        <Route path='/account' element={<Account/>}/>
       </Routes>
     </BrowserRouter>
   </div>)

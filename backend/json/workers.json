@@ -5,9 +5,8 @@
         "name": "John Smith",
         "role": "employee",
         "location": "Hartford",
-        "contact": "123-456-7898",
+        "contact": "555-555-555",
         "salary": "$100,000",
-        "permisions": false,
         "employees": false
         },
         { 
@@ -15,29 +14,442 @@
         "name": "Jane Doe",
         "role": "employee",
         "location": "St Paul",
-        "contact": "867-5309",
+        "contact": "555-555-555",
         "salary": "$100,000",
-        "permisions": false,
         "employees": false
         },
         { 
         "id": "3",
-        "name": "Nathan Leathers",
-        "role": "HR",
+        "name": "Tyrone Brewer",
+        "role": "employee",
         "location": "Hartford",
-        "salary": "Tips",
-        "contact": "555-555-5555",
-        "permisions": true,
+        "salary": "$100,000",
+        "contact": "555-555-555",
         "employees": false
         },
         {
         "id": "4",
-        "name": "Alex Goncalves",
-        "role": "Manager",
+        "name": "Mavea Taylor",
+        "role": "employee",
         "location": "Hartford",
-        "contact": "555-2368",
-        "salary": "100 Billion Dollars",
-        "permisions": false,
-        "employees": ["Jane Doe", "John Smith"]
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },
+        {
+        "id": "5",
+        "name": "Jim Boxer",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "6",
+        "name": "Secundino Araujo",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },       
+        {
+        "id": "7",
+        "name": "Yeni Gamez",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "8",
+        "name": "Conny Renner",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "9",
+        "name": "Dwarakanath Kavser",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "10",
+        "name": "Hazel Clark",
+        "role": "employee",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "11",
+        "name": "Naomi Jain",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "12",
+        "name": "Debbie Soto",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "13",
+        "name": "Amy Leithe",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "14",
+        "name": "Hugo Castilla",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "15",
+        "name": "Alexandra Hopkins",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "16",
+        "name": "Ian Taylor",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "17",
+        "name": "Clara Singh",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "18",
+        "name": "Xavier Neilsen",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "19",
+        "name": "Pepe Silvia",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "20",
+        "name": "Ivan Rosenberg",
+        "role": "employee",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "21",
+        "name": "Calvin Miller",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "22",
+        "name": "Kate Johnson",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "23",
+        "name": "Blake Gill",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "24",
+        "name": "Charlie Patel",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "25",
+        "name": "Lucas Blackmore",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "26",
+        "name": "Leah Johnson",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "27",
+        "name": "Jimena Sanchez",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "28",
+        "name": "Djoko Ivancevic",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "29",
+        "name": "Lilja Hakala",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "30",
+        "name": "Kasper Poth",
+        "role": "employee",
+        "location": "remote",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "31",
+        "name": "Elmer Campbell",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "32",
+        "name": "Joesph Duarte",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "33",
+        "name": "Parth Uchil",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "34",
+        "name": "Migel Alavera",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "35",
+        "name": "Elmer Campbell",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "36",
+        "name": "Manasa Saha",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },    
+        {
+        "id": "37",
+        "name": "Allan Bradley",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "38",
+        "name": "Johan Skare",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "39",
+        "name": "Terry Marshall",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "40",
+        "name": "Marcus Lee",
+        "role": "employee",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },      
+        {
+        "id": "41",
+        "name": "Chole Li",
+        "role": "manager",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$200,000",
+        "employees": false
+        },        
+        {
+        "id": "42",
+        "name": "Madeleine Hughes",
+        "role": "manager",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$200,000",
+        "employees": false
+        },        
+        {
+        "id": "43",
+        "name": "Elmer Campbell",
+        "role": "manager",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$200,000",
+        "employees": false
+        },         
+        {
+        "id": "44",
+        "name": "Roy Burton",
+        "role": "manager",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },        
+        {
+        "id": "45",
+        "name": "Mariana Gonzalez",
+        "role": "manager",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },   
+        {
+        "id": "46",
+        "name": "Nora Rantala",
+        "role": "hr",
+        "location": "Hunt Valley",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },   
+        {
+        "id": "47",
+        "name": "Gene Henderson",
+        "role": "hr",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },   
+        {
+        "id": "48",
+        "name": "Sergio Romero",
+        "role": "hr",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        },   
+        {
+        "id": "49",
+        "name": "Victoria Fowler",
+        "role": "hr",
+        "location": "Hartford",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
+        }, 
+        {
+        "id": "50",
+        "name": "Zachary Young",
+        "role": "hr",
+        "location": "St. Paul",
+        "contact": "555-555-555",
+        "salary": "$100,000",
+        "employees": false
         }
+
+
 ]

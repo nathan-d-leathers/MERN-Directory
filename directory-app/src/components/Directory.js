@@ -23,9 +23,8 @@ function Directory() {
 
     return (
         <div>
-            <h1>Welcome to the Directory Page</h1>
+            <h2>Welcome to the Directory Page</h2>
             <br/>
-            <h2>All Routes Working So Far!</h2>
             <ul> 
                 {workerData.map((worker) => (
                     <li key={worker.id} onClick={() => handleClick(worker.id)}>

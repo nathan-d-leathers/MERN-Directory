@@ -9,8 +9,21 @@ function Login() {
         <div>
             <h1>Welcome to the Login Page</h1>
             <br/>
-            <button onClick={() => navigate('../directory')}>Go To Directory</button>
+            <form action="/user/register" method='POST'/>
+                <label>
+                    Username:
+                    <input type="text" name="name" required/>
+                </label>
             <br/>
+            <form action="/user/register" method='POST'/>
+                <label>
+                    Password:
+                    <input type="text" name="name" required/>
+                </label>
+            <br/>
+            <button onClick={() => navigate('../directory')}>Submit</button>
+            <br/>
+            <hr/>
             <a onClick={() => navigate('../register')}>Create Account Instead</a>
         </div>
     )
