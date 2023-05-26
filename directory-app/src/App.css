@@ -26,3 +26,16 @@ input[type='text'] {
   align-items: center;
   text-align: left;
 }
+
+.logo{
+  align-items: center;
+  text-align: center;
+}
+
+.directory-lists{
+  text-align: center;
+}
+
+.delete{
+  color: red;
+}

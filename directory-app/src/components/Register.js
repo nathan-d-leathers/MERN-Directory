@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react';
+import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg";
 
@@ -46,16 +46,16 @@ function Register({newUser, setNewUser}) {
                     name="contact"
                     value={newUser.contact} 
                     onChange={handleInputChange} 
-                    required/>
+                    required/> 
                 </label>
             <br/>
                 <label>
                     Job Role:
-                    <input type="radio" id='employee' onChange={handleInputChange} name="role" value="Employee"/>
+                    <input type="radio" id='employee' onChange={handleInputChange} name="role" value="employee"/>
                     <label for="employee">Employee</label><br/>
-                    <input type="radio" id='hr' onChange={handleInputChange} name="role" value="HumanResources"/>
+                    <input type="radio" id='hr' onChange={handleInputChange} name="role" value="hr"/>
                     <label for="hr">Human Resources</label><br/>
-                    <input type="radio" id='manager' onChange={handleInputChange} name="role" value="Manager"/>
+                    <input type="radio" id='manager' onChange={handleInputChange} name="role" value="manager"/>
                     <label for="manager">Manager</label><br/>
                 </label>
             <br/>

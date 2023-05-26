@@ -33,10 +33,11 @@ function Directory({user, newUser, setUser}) {
         console.log(`user is now logged out`)
         navigate('../')
       };
+    
 
     return (
         <div>
-            <div class="d-flex">
+            <div>
             <button onClick={() => navigate('/')}>
                 Home
             </button>
@@ -51,10 +52,12 @@ function Directory({user, newUser, setUser}) {
             </div>
             </div>
             <hr/>
-            {/* <Navbar/> */}
+            <div class="logo">
             <img src={umbrella} id="umbrella" />
-            <h2>Welcome to the Directory Page</h2> 
+            <h2>Welcome to the Directory</h2> 
+            <h3>Click on a name below to view employee information</h3>
             <br/>
+            </div>
             <ul> 
                 {workerData.map((worker) => (
                     <li key={worker.id} onClick={() => handleClick(worker.id)}>
