@@ -4,7 +4,6 @@ import umbrella from "../assets/umbrella.jpeg"
 
 
 function Directory({user, newUser, setUser}) {
-    // console.log({user, newUser})
 
     const navigate = useNavigate();
     const [workerData, setWorkerData] = useState([]);

@@ -7,7 +7,7 @@ function Coworker({user, setUser, newUser}) {
     const navigate= useNavigate()
     const [coworker, setCoworker] = useState([]);
     const params = useParams();
-    // const [permisions, setPermisions] = useState(false)
+
     let base_url = "http://localhost:7500/api/workers";
 
     useEffect(()=>{
@@ -26,14 +26,6 @@ function Coworker({user, setUser, newUser}) {
         console.log(`user is now logged out`)
         navigate('../')
       };
-
-    // useEffect(()=>{
-    //     console.log({coworker})
-    //     console.log(newUser.employees)
-    //     if(coworker.name in newUser.employees) {
-    //         setPermisions(true)
-    //     }
-    // },[])
 
     return (
         <div>            
@@ -58,17 +50,17 @@ function Coworker({user, setUser, newUser}) {
             <h1>Welcome to the Travelers Directory Co-Worker Page</h1>
             </div>
             <br/>
-            <h2><u>{coworker.name}</u></h2>
-            <h3>{coworker.role}</h3>
-            <h3>{coworker.location}</h3>
-            <h3>{coworker.contact}</h3>
+            <h2>Name: {coworker.name}</h2>
+            <h3>Job Role: {coworker.role}</h3>
+            <h3>Work Location: {coworker.location}</h3>
+            <h3>Contact Information: {coworker.contact}</h3>
             <h3>
                 {((coworker.id == user.id) || 
                 (coworker.id == newUser.id)|| 
                 (newUser.role == "hr") ||
                 (newUser.role === "manager" && (newUser.employees.includes(coworker.name)))) 
                 ?
-                <p>{coworker.salary}</p> :
+                <p>Salary: {coworker.salary}</p> :
                 <p>You do not have permision to view this co-workers salary</p>
                 }
                 </h3>

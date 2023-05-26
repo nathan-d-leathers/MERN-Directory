@@ -1,7 +1,5 @@
 import {React} from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom';
-// import { redirect } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
 
 function Welcome() {

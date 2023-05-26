@@ -6,7 +6,7 @@ import umbrella from "../assets/umbrella.jpeg";
 function Register({newUser, setNewUser}) {
 
     const navigate = useNavigate();
-    // error below with setNewUser function
+
     const handleInputChange = (event) => {
         const {name, value } = event.target;
         setNewUser((prevUser) => ({
