@@ -1,9 +1,10 @@
 import {React, useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import umbrella from "../assets/umbrella.jpeg"
+import { useNavigate } from 'react-router-dom';
 
 function Coworker({user}) {
-    const navigate= navigate()
+    const navigate= useNavigate()
     const [coworker, setCoworker] = useState([]);
     const params = useParams();
     let base_url = "http://localhost:7500/api/workers";
@@ -77,15 +78,15 @@ function Coworker({user}) {
             <h3>{coworker.role}</h3>
             <h3>{coworker.location}</h3>
             <h3>{coworker.contact}</h3>
-            {/* <h3>
+            <h3>
                 {(coworker.id == user.id || 
-                user.role === "hr" || 
-                (user.role === "manager" && permisions) 
+                user.role === "hr" 
+                // || (user.role === "manager" && permisions) 
                 ?
                 <p>{coworker.salary}</p> :
                 <p>You do not have permision to view this co-workers salary</p>
                 )}
-                </h3> */}
+                </h3>
         </div>
     );
 }

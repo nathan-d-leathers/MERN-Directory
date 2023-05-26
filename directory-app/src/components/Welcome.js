@@ -9,12 +9,12 @@ function Welcome() {
     const navigate = useNavigate();
 
     return (
-        <div className='welcome-body'>
+        <div class='body'>
             <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Travelers Enterprise Directory</h1>
-            <h2>Login or Create Account below to view the employee directroy</h2>
-            <button onClick={() => navigate('/login')}>Login</button>
-            <button onClick={() => navigate('/register')}>Create Account</button>
+            <h2>Login or Create Account below to view the directroy</h2>
+            <button class="button" onClick={() => navigate('/login')}>Login</button>
+            <button class="button" onClick={() => navigate('/register')}>Create Account</button>
         </div>
     )
 };

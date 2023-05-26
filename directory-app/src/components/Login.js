@@ -23,7 +23,7 @@ function Login({user, setUser}) {
 
 
     return (
-        <div>
+        <div class='body'>
             <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Login Page</h1>
             <br/>
@@ -51,8 +51,7 @@ function Login({user, setUser}) {
             <br/>
             <button type="submit" onClick={handleSubmit}>Submit</button>
             <br/>
-            <hr/>
-            <a onClick={() => navigate('../register')}>Create Account Instead</a>
+            <a id="link-tag" onClick={() => navigate('../register')}>Create Account Instead</a>
         </div>
     )
 }

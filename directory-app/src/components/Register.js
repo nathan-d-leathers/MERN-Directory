@@ -6,7 +6,7 @@ import umbrella from "../assets/umbrella.jpeg";
 function Register({newUser, setNewUser}) {
 
     const navigate = useNavigate();
-
+    // error below with setNewUser function
     const handleInputChange = (event) => {
         const {name, value } = event.target;
         setNewUser((prevUser) => ({
@@ -24,11 +24,11 @@ function Register({newUser, setNewUser}) {
 
 
     return (
-            <div>
+            <div class='body'>
             <img src={umbrella} id="umbrella" />
             <h1>Welcome to the Register Account Page</h1>
             <br/>
-            <form  onSubmit={handleSubmit}/>
+            <form  onSubmit={handleSubmit} class='register'/>
             <label>
                     Name:
                     <input 
@@ -101,9 +101,9 @@ function Register({newUser, setNewUser}) {
             <br/>
             <form/>
             <br/>
-            <a onClick={() => navigate('../login')}>Go to Login</a>
-            <br/>
             <button onClick={() => navigate('../directory')} type="submit">Register</button>
+            <br/>
+            <a onClick={() => navigate('../login')}>Go to Login</a>
             </div>
         
     )
